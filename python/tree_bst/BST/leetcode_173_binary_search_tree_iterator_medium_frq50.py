@@ -94,3 +94,5 @@ class BSTIterator:
         @return whether we have a next smallest number
         """
         return len(self.flattered) > 0
+
+# Kang's solution        

@@ -42,3 +42,13 @@ class Solution:
             else:
                 root = root.right
         return candidate
+
+        # if want to get inorder precessor
+        candidate = None
+        while root:
+            if p.val < root.val:
+                root = root.left
+            else:
+                candidate = root
+                root = root.right
+        return candidate

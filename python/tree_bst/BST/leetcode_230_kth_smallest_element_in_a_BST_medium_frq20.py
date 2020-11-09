@@ -62,6 +62,19 @@ class Solution:
                 return curr.val
     
             curr = curr.right
+
+        # If it is for the Kth largest number. 
+        while stack or curr:
+            while curr:
+                stack.append(curr)
+                curr = curr.right
+
+            curr - stack.pop()
+            k -= 1
+            if not k:
+                return curr.val
+
+            curr = curr.left           
             
 # Morris inorder tranversal
 class Solution:

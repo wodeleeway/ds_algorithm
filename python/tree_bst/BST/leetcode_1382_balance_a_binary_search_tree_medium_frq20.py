@@ -64,5 +64,4 @@ class Solution:
             
             return root
         
-        return build(inorder(root))
-            
+        return build(inorder(root)) 
